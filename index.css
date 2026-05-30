@@ -563,6 +563,26 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.about__badges {
+    display: flex;
+    justify-content: center;
+    gap: var(--gutter-small);
+    margin-top: var(--gutter-normal);
+}
+
+.about__badge {
+    height: 40rem;
+    width: 40rem;
+    object-fit: contain;
+}
+
+@media(max-width: 900px) {
+    .about__badge {
+        height: 20rem;
+        width: 20rem;
+    }
+}
+
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
